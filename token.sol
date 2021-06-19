@@ -1490,7 +1490,7 @@ contract BTOKEN is ERC777OwnableUpgradeSafe, ContractGuard {
     //cap: 100000000000000000000000000/1e18=100 000 000
 
     function initialize(uint256 _cap,address _taxFund) public initializer {
-        __ERC777_init("BTEST", "BTEST", true);
+        __ERC777_init("polyeuro.finance", "BALL", true);
         require(_taxFund != address(0), "zero");
         cap = _cap;
         taxFund = _taxFund;
